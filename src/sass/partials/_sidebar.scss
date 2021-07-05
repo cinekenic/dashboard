@@ -1,0 +1,33 @@
+// .sidebar-menu {
+//   display: block;
+//   background: $sidebar-color;
+//   width: 200px;
+//   position: fixed;
+//   top: 0;
+//   z-index: 10;
+// }
+
+.sidebar-outside {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background: $sidebar-color;
+  height: 100%;
+  width: 190px;
+  font-family: "Lato", sans-serif;
+  z-index: 5;
+}
+
+.logo-text {
+  display: flex;
+  color: $section-color;
+  width: 100%;
+}
+
+.logo-text h1 {
+  font-family: "Satisfy", cursive;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  padding-left: 25px;
+}
