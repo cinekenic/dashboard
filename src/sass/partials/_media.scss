@@ -1,0 +1,60 @@
+@media (max-width: 767px) {
+  //   .form-date {
+  //     width: 50%;
+  //     height: 30%;
+  //   }
+
+  .top-menu {
+    display: none;
+    // visibility: visible;
+  }
+
+  .rwd-line {
+    border-top: 1px solid $font-color;
+    margin: 42px 18px;
+  }
+
+  .rwd-top-bar {
+    display: inline;
+    font-size: 12px;
+  }
+
+  .hamburger {
+    background: $sidebar-color;
+    width: 19px;
+    display: block;
+    height: 22px;
+    margin: 20px 15px 20px 17px;
+    cursor: pointer;
+  }
+
+  .line-first {
+    height: 4px;
+    background: white;
+    margin-bottom: 2px;
+  }
+
+  .line-second,
+  .line-third {
+    height: 3px;
+    background: white;
+  }
+
+  .line-second {
+    margin: 5px 0px;
+  }
+
+  .line-third {
+    margin: 5px 0px 0px 0px;
+  }
+
+  .sidebar-outside {
+    position: fixed;
+    left: 0;
+    transition: 0.5s ease;
+    transform: translateX(-150px);
+  }
+  .show {
+    transform: translateX(0px);
+  }
+}

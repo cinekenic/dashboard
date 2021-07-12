@@ -1,11 +1,11 @@
-// .sidebar-menu {
-//   display: block;
-//   background: $sidebar-color;
-//   width: 200px;
-//   position: fixed;
-//   top: 0;
-//   z-index: 10;
-// }
+.sidebar-menu {
+  display: block;
+  background: $sidebar-color;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
 
 .sidebar-outside {
   display: flex;
@@ -30,4 +30,102 @@
   font-size: 1.5rem;
   margin: 20px 0;
   padding-left: 25px;
+}
+
+.set-links {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.link-out,
+.top-link {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+}
+
+.link-out::before,
+.top-link::before {
+  background: $button-color;
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  margin-right: 80px;
+  content: "";
+  height: inherit;
+  width: 5px;
+  visibility: hidden;
+}
+
+.set-links .link-out:hover::before,
+.top-link:hover::before {
+  visibility: visible;
+}
+
+.link-out a,
+.top-link a {
+  display: flex;
+  color: $font-color;
+  text-decoration: none;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%)
+    contrast(82%);
+  //   fill: #4c8ca2;
+
+  margin: 0 15px;
+}
+
+.contact-chat {
+  border-top: 1px solid $font-color;
+  padding-top: 10px;
+}
+
+.manager-text h4 {
+  margin-right: 18px;
+  font-size: 14px;
+}
+
+.photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.name a {
+  position: relative;
+  top: 15px;
+  right: 6px;
+  text-decoration: none;
+  color: #56819f;
+  margin-left: 70px;
+  font-size: 15px;
+}
+
+.rwd-top-bar {
+  display: none;
+}
+
+.set-links,
+.rwd-top.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-out,
+.top-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
