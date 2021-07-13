@@ -22,13 +22,13 @@
     border-right: 1.5px solid #e3e3e3;
   }
 
-  .row {
-    height: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-  }
+  // .row {
+  //   height: 20px;
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  //   padding: 10px;
+  // }
 
   .table-container {
     width: 100%;
@@ -130,5 +130,19 @@
 
   .show {
     transform: translateX(0px);
+  }
+
+  // .row {
+  //   flex-direction: column;
+  //   flex-wrap: wrap;
+  // }
+
+  .links-list-item {
+    display: flex;
+    flex-direction: column;
+    color: #56819f;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
   }
 }

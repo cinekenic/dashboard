@@ -1,0 +1,41 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.links-list {
+  width: 60%;
+}
+
+.main-page-title {
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.links-list-item {
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  .icon-wrapper {
+    visibility: hidden;
+  }
+
+  &:hover {
+    cursor: pointer;
+    .icon-wrapper {
+      visibility: visible;
+      .icon-links {
+        filter: invert(69%) sepia(82%) saturate(3146%) hue-rotate(1deg)
+          brightness(107%) contrast(103%);
+      }
+      .icon-trash {
+        filter: invert(53%) sepia(88%) saturate(18%) hue-rotate(322deg)
+          brightness(94%) contrast(95%);
+      }
+    }
+  }
+}
