@@ -1,23 +1,96 @@
 @media (max-width: 767px) {
-  //   .form-date {
-  //     width: 50%;
-  //     height: 30%;
-  //   }
+  .form-date {
+    width: 50%;
+    height: 30%;
+  }
+
+  .date-1 {
+    margin-right: 50px;
+  }
+
+  .form-outside {
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 35px;
+  }
+
+  .form-outside .form-date:first-of-type {
+    margin-bottom: 5px;
+    border-right: 1.5px solid #e3e3e3;
+  }
+
+  .row {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .table-container {
+    width: 100%;
+  }
+
+  .table-container-row {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .amount {
+    margin-right: -130px;
+  }
+
+  .chart-wrapper {
+    margin-top: 100px;
+  }
+
+  .row:hover {
+    background: #dcdde1;
+    cursor: pointer;
+  }
+
+  .page {
+    top: -68px;
+    z-index: 17;
+  }
 
   .top-menu {
     display: none;
-    // visibility: visible;
+    visibility: hidden;
   }
 
-  .rwd-line {
-    border-top: 1px solid $font-color;
-    margin: 42px 18px;
+  .page .container {
+    margin-top: 10px;
+    margin-left: 34px;
   }
 
+  .contact-chat {
+    padding-top: 0;
+  }
+
+  /*rwd topbar to sidebar*/
   .rwd-top-bar {
     display: inline;
     font-size: 12px;
   }
+
+  .rwd-line {
+    border-top: 1px solid $font-color;
+    margin: 42px 0px 18px 0px;
+  }
+
+  /*hamburger*/
 
   .hamburger {
     background: $sidebar-color;
@@ -31,7 +104,7 @@
   .line-first {
     height: 4px;
     background: white;
-    margin-bottom: 2px;
+    margin: 0px 0px 2px 0px;
   }
 
   .line-second,
@@ -54,6 +127,7 @@
     transition: 0.5s ease;
     transform: translateX(-150px);
   }
+
   .show {
     transform: translateX(0px);
   }

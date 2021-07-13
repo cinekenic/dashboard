@@ -1,10 +1,11 @@
+/*Sidebar*/
 .sidebar-menu {
   display: block;
   background: $sidebar-color;
   width: 200px;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 16;
 }
 
 .sidebar-outside {
@@ -13,9 +14,13 @@
   position: fixed;
   background: $sidebar-color;
   height: 100%;
-  width: 190px;
+  width: 194px;
   font-family: "Lato", sans-serif;
   z-index: 5;
+}
+
+.sidebar-inter {
+  margin-bottom: 15px;
 }
 
 .logo-text {
@@ -32,11 +37,27 @@
   padding-left: 25px;
 }
 
-.set-links {
+.set-links,
+.rwd-top-menu {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
+}
+
+.set-links li:hover,
+.rwd-top-menu li:hover {
+  background: $sidebar-color-hover;
+}
+
+.set-links li:hover a,
+.rwd-top-menu li:hover a {
+  color: $section-color;
+}
+
+.set-links li:hover a .icon,
+.rwd-top-menu li:hover a .icon {
+  filter: invert(100%);
 }
 
 .link-out,
@@ -50,12 +71,10 @@
 
 .link-out::before,
 .top-link::before {
-  background: $button-color;
+  background-color: $button-color;
   position: absolute;
-
-  bottom: 0;
-  left: 0;
-
+  bottom: 0px;
+  left: 0px;
   margin-right: 80px;
   content: "";
   height: inherit;
@@ -80,11 +99,14 @@
   height: 16px;
   filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%)
     contrast(82%);
-  //   fill: #4c8ca2;
-
-  margin: 0 15px;
+  margin: 0px 15px 0px 20px;
 }
 
+.rwd-top-bar {
+  display: none;
+}
+
+/*Contact*/
 .contact-chat {
   border-top: 1px solid $font-color;
   padding-top: 10px;
@@ -93,6 +115,7 @@
 .manager-text h4 {
   margin-right: 18px;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 .photo {
@@ -103,29 +126,28 @@
   position: absolute;
 }
 
+.photo::before {
+  background-color: #04ae00;
+  position: absolute;
+  top: 5px;
+  left: 64px;
+  content: "";
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  z-index: 6;
+}
+
 .name a {
   position: relative;
   top: 15px;
   right: 6px;
   text-decoration: none;
   color: #56819f;
-  margin-left: 70px;
+  margin-left: 50px;
   font-size: 15px;
 }
 
-.rwd-top-bar {
-  display: none;
-}
-
-.set-links,
-.rwd-top.menu {
-  display: flex;
-  flex-direction: column;
-}
-
-.link-out,
-.top-link {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.name a:hover {
+  color: #04ae00;
 }

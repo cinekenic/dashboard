@@ -165,7 +165,7 @@
     <div class="top-menu">
       <div class="top-menu-part">
         <ul class="top-links">
-          <li class="link">
+          <li class="link-one">
             <a href="#"
               ><img
                 src="images/wallet.svg"
@@ -173,24 +173,83 @@
                 alt="wallet"
             /></a>
             <div class="balance">$1500,00</div>
-            <a href="#"><img src="images/arrow-down.svg" alt="arrow-down" /></a>
-          </li>
-
-          <li class="link">
             <a href="#"
-              ><img src="images/notification.svg" alt="notification"
+              ><img
+                src="images/arrow-down.svg"
+                class="icon-arrow-down icon-top"
+                alt="arrow"
             /></a>
           </li>
-
-          <li class="link">
-            <a href="#"><img src="images/profile.svg" alt="profile" /></a>
+          <li class="link-one">
+            <a href="#"
+              ><img
+                src="images/notification.svg"
+                class="icon-notification icon-top"
+                alt="notification"
+            /></a>
+          </li>
+          <li class="link-one">
+            <a href="#"
+              ><img
+                src="images/profile.svg"
+                class="icon-profile icon-top"
+                alt="profile"
+            /></a>
             <div class="name-profile">Leonardo Dicaprio</div>
           </li>
-
-          <li class="link">
-            <a href="#"><img src="images/quit.svg" alt="quit" /></a>
+          <li class="link-one">
+            <a href="#"
+              ><img src="images/quit.svg" class="icon-quit" alt="quit"
+            /></a>
           </li>
         </ul>
+      </div>
+    </div>
+    <div id="general" class="general page active">
+      <div class="container">
+        <div class="text-head">
+          <h3>General statistic</h3>
+        </div>
+        <div class="form-outside">
+          <form class="form">
+            <input class="form-date date-1" type="date" />
+            <input class="form-date date-2" type="date" />
+            <a href="#" class="btn btn-refresh"
+              ><img src="images/refresh.svg" class="icon-refresh" alt="refresh"
+            /></a>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="table-container">
+          <div class="table-container-row">
+            <div class="column">
+              <div class="row">
+                <p>Visit Signups</p>
+                <p class="amount">124</p>
+              </div>
+              <div class="row">
+                <p>FTD</p>
+                <p class="amount">445</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="row">
+                <p>Net Deposit</p>
+                <p class="amount">564</p>
+              </div>
+              <div class="row">
+                <p>Turn Over</p>
+                <p class="amount">432</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            <h5>Earnings chart</h5>
+          </div>
+          <canvas id="myChart"></canvas>
+        </div>
       </div>
     </div>
     <script src="js/app.js"></script>

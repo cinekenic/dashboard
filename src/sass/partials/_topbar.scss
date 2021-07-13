@@ -1,0 +1,63 @@
+/*Topbar*/
+.top-menu {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 55px;
+  background-color: $section-color;
+  border-bottom: 1px solid $body-color;
+  color: $font-color;
+  flex-direction: row;
+  justify-content: flex-end;
+  z-index: 4;
+  font-family: "Open Sans", sans-serif;
+}
+
+.top-menu .top-menu-part {
+  display: flex;
+}
+
+.top-menu .top-links {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  flex-direction: row;
+}
+
+.top-menu .top-links .link-one {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  border-left: 1px solid #e3e3e3;
+}
+
+.top-menu .top-links .link-one *:first-child {
+  margin-left: 20px;
+}
+
+.top-menu .top-links .link-one a {
+  font-size: 12px;
+  filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%)
+    contrast(82%);
+}
+
+.top-menu .top-links .link-one a:hover {
+  filter: invert(61%) sepia(22%) saturate(2202%) hue-rotate(1deg)
+    brightness(104%) contrast(103%);
+}
+
+.top-menu .top-links .link-one * {
+  margin-right: 20px;
+}
+
+.top-menu .top-links .link-one img {
+  height: 15px;
+  width: 15px;
+  margin: 0 10px;
+}
+
+img {
+  border-style: none;
+}
