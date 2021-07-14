@@ -13,7 +13,6 @@
 }
 
 .page .container {
-  margin: 70px 20px 20px 205px;
   height: 95%;
   display: flex;
   min-width: 85%;
@@ -21,7 +20,7 @@
   box-sizing: content-box;
   background-color: #ffffff;
   margin: 70px 20px 20px 210px;
-  box-shadow: 0 0 10px #e3e3e3;
+  box-shadow: 0 0 10px $body-color;
   flex-direction: column;
   font-family: "Lato", sans-serif;
 }

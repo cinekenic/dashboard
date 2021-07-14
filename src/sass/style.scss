@@ -5,22 +5,4 @@
 @import "partials/media";
 @import "partials/topbar";
 @import "partials/links";
-
-.btn {
-  border-radius: 3;
-  color: #fff;
-  font-size: 20px;
-  background: $button-color;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  cursor: pointer;
-  width: fit-content;
-}
-
-.btn:last-of-type {
-  margin-bottom: 20px;
-}
-
-.btn:hover {
-  background: $button-hover-color;
-}
+@import "partials/buttons";

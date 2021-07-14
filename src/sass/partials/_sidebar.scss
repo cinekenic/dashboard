@@ -27,14 +27,14 @@
   display: flex;
   color: $section-color;
   width: 100%;
-}
 
-.logo-text h1 {
-  font-family: "Satisfy", cursive;
-  letter-spacing: 3px;
-  font-size: 1.5rem;
-  margin: 20px 0;
-  padding-left: 25px;
+  h1 {
+    font-family: "Satisfy", cursive;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    margin: 20px 0;
+    padding-left: 25px;
+  }
 }
 
 .set-links,
@@ -124,30 +124,32 @@
   border-radius: 50%;
   object-fit: cover;
   position: absolute;
+
+  &::before {
+    background-color: #04ae00;
+    position: absolute;
+    top: 5px;
+    left: 64px;
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    z-index: 6;
+  }
 }
 
-.photo::before {
-  background-color: #04ae00;
-  position: absolute;
-  top: 5px;
-  left: 64px;
-  content: "";
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  z-index: 6;
-}
+.name {
+  a {
+    position: relative;
+    top: 15px;
+    right: 6px;
+    text-decoration: none;
+    color: #56819f;
+    margin-left: 50px;
+    font-size: 15px;
 
-.name a {
-  position: relative;
-  top: 15px;
-  right: 6px;
-  text-decoration: none;
-  color: #56819f;
-  margin-left: 50px;
-  font-size: 15px;
-}
-
-.name a:hover {
-  color: #04ae00;
+    &:hover {
+      color: #04ae00;
+    }
+  }
 }
