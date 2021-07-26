@@ -1,11 +1,44 @@
 @media (max-width: 767px) {
+  .page {
+    top: -68px;
+    z-index: 17;
+
+    .container {
+      margin-top: 10px;
+      margin-left: 34px;
+    }
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .top-menu {
+    display: none;
+    visibility: hidden;
+  }
+
   .form-date {
     width: 50%;
     height: 30%;
   }
 
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .date-1 {
-    margin-right: 50px;
+    width: 150px;
+    margin-top: 20px;
+  }
+
+  .date-2 {
+    width: 150px;
   }
 
   .form-outside {
@@ -33,12 +66,6 @@
     margin-top: 15px;
   }
 
-  .column {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
   .amount {
     margin-right: -130px;
   }
@@ -50,21 +77,6 @@
   .row:hover {
     background: #dcdde1;
     cursor: pointer;
-  }
-
-  .page {
-    top: -68px;
-    z-index: 17;
-  }
-
-  .top-menu {
-    display: none;
-    visibility: hidden;
-  }
-
-  .page .container {
-    margin-top: 10px;
-    margin-left: 34px;
   }
 
   .contact-chat {
@@ -131,5 +143,10 @@
     align-items: center;
     width: 100%;
     justify-content: center;
+  }
+
+  a.btn-refresh {
+    margin-top: 5px;
+    width: 150px;
   }
 }

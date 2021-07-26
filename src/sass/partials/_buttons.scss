@@ -8,9 +8,49 @@
   cursor: pointer;
   width: fit-content;
 }
+.btn-refresh {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f58220;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 0 10px;
+  min-height: 35px;
+  min-width: 35px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+img.icon-refresh {
+  filter: invert(69%) sepia(82%) saturate(3146%) hue-rotate(1deg)
+    brightness(17%) contrast(103%);
+  width: 20px;
+}
 
 .btn:last-of-type {
   margin-bottom: 20px;
+}
+
+.btn:hover {
+  background: $button-hover-color;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button {
+  display: none;
 }
 
 .btn:hover {
